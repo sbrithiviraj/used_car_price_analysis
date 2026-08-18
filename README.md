@@ -22,13 +22,20 @@ We are using LASSO regression model with a preprocessing pipeline to scale and c
 
 # Requirements to execute
 Python - 3.X
+
 Python libraries - pandas, numpy, matplotlib, scikit-learn
 
+Notebook: https://github.com/sbrithiviraj/used_car_price_analysis/blob/main/usedcarpriceanalysis.ipynb
+
 # Data
-vehicles.csv
+vehicles.csv (has to be downloaded from Required Assignment 11.1: What Drives the Price of a Car? )
 
 # Report
-![Top Factors influencing used car price](feature_importance.png)
+![Top Factors influencing used car price](images\price_impact_plots.png)
+
+## Best Model
+Out of the 3 model plots shown above, Lasso Regression results looks promising though the performance metrics are not very different between 3 models. Highlights of the predictions are as follows.
+
 ## Key factors impacting price positively
 1. Diesel engines are the most popular feature, customers were ready to pay 12K more.
 2. Followed by year manufactured as expected the latest cars has big impact in the price
@@ -44,7 +51,7 @@ vehicles.csv
 4. Gas cars lost close to $2K
 5. Brand - Nissan and Hyundai are less expensive
 
-# Recommendations to customer (Used car dealership)
+## Recommendations to customer (Used car dealership)
 
 | Action | Recommendation | Justification |
 |--------|----------------|---------------|
@@ -52,3 +59,6 @@ vehicles.csv
 |Target | Diesel Vehicles | Diesel trucks or SUVs have highest consumer demand |
 |Avoid / Limit | High milage FWD sedans / hatchbacks | These vehicles lost lot of values and margin will be very low. |
 |Brand Focus | Toyota | Toyota vehicles has good resale price whereas Nissan and Hyundai lost lot of values.
+
+## Next steps
+Upgrade the underlying data availability, consider using the vehicle history from Carfax, current market dynamics from KBB.
